@@ -25,6 +25,34 @@ h1, h2, h3, h4, h5, h6
 	font-family: "Lato", sans-serif
 
 ////////////////////////////////
+           Github Ribbon
+////////////////////////////////
+
+.ribbon 
+	background-color: $secondary-color
+	overflow: hidden
+	position: absolute
+	right: -4em
+	top: 4em
+	-moz-transform: rotate(45deg)
+	-webkit-transform: rotate(45deg)
+	-moz-box-shadow: 0 0 5px #888
+	-webkit-box-shadow: 0 0 5px #888
+
+
+.ribbon a 
+	border: 1px solid #faa
+	color: #fff
+	display: block
+	font-weight: bold
+	font-family: 'Lato', sans-serif
+	margin: 0.05em 0 0.075em 0
+	padding: 0.5em 3.5em
+	text-align: center
+	text-decoration: none
+
+
+////////////////////////////////
            Navbar
 ////////////////////////////////
 
@@ -46,14 +74,29 @@ h1, h2, h3, h4, h5, h6
 		a 
 			font-size: 18px
 			color: $primary-color
+		&:hover
+			a 
+				background-color: #fff
+				border-color: transparent
+				color: $third-color
 
 .uk-navbar-nav > li > a
 	font-family: "Lato", sans-serif
 	
 
+////////////////////////////////
+           Homepage Slider
+////////////////////////////////
 
+.slider
+	height: 393px
 
+.height100
+	height: 100%
 
+.slider 
+	.uk-overlay-background
+		background: rgba(0, 0, 0, 0.2)
 
 
 
