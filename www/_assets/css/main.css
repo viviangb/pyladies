@@ -16,14 +16,14 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #FF8700;
   overflow: hidden;
   position: absolute;
-  right: -4em;
-  top: 4em;
+  top: 60px;
+  right: -60px;
+  z-index: 999;
   -moz-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   -moz-box-shadow: 0 0 5px #888;
   -webkit-box-shadow: 0 0 5px #888;
 }
-
 .ribbon a {
   border: 1px solid #faa;
   color: #fff;
@@ -34,6 +34,9 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0.5em 3.5em;
   text-align: center;
   text-decoration: none;
+}
+.ribbon:hover {
+  color: #fff;
 }
 
 .uk-navbar {
@@ -67,7 +70,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .slider {
-  height: 393px;
+  height: 420px;
 }
 
 .height100 {
@@ -75,5 +78,5 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .slider .uk-overlay-background {
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.3);
 }

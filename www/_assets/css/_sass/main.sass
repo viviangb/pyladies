@@ -32,24 +32,27 @@ h1, h2, h3, h4, h5, h6
 	background-color: $secondary-color
 	overflow: hidden
 	position: absolute
-	right: -4em
-	top: 4em
+	top: 60px
+	right: -60px
+	z-index: 999
 	-moz-transform: rotate(45deg)
 	-webkit-transform: rotate(45deg)
 	-moz-box-shadow: 0 0 5px #888
 	-webkit-box-shadow: 0 0 5px #888
 
+	a 
+		border: 1px solid #faa
+		color: #fff
+		display: block
+		font-weight: bold
+		font-family: 'Lato', sans-serif
+		margin: 0.05em 0 0.075em 0
+		padding: 0.5em 3.5em
+		text-align: center
+		text-decoration: none
 
-.ribbon a 
-	border: 1px solid #faa
-	color: #fff
-	display: block
-	font-weight: bold
-	font-family: 'Lato', sans-serif
-	margin: 0.05em 0 0.075em 0
-	padding: 0.5em 3.5em
-	text-align: center
-	text-decoration: none
+	&:hover
+		color: $clear-text
 
 
 ////////////////////////////////
@@ -89,14 +92,14 @@ h1, h2, h3, h4, h5, h6
 ////////////////////////////////
 
 .slider
-	height: 393px
+	height: 420px
 
 .height100
 	height: 100%
 
 .slider 
 	.uk-overlay-background
-		background: rgba(0, 0, 0, 0.2)
+		background: rgba(0, 0, 0, 0.3)
 
 
 
