@@ -5,9 +5,10 @@
     {% if site.title %}
     <title>{% block title %}{% if title %}{{ title }} &ndash; {% endif %}{{ site.title }}{% if not title and site.subtitle %} &ndash; {{ site.subtitle }}{% endif %}{% endblock %}</title>{% endif %}
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-    <link rel="stylesheet" href="{{ get_asset('css/pygments.css') }}" media="screen" title="screen"/>
+    <link rel="stylesheet" href="{{ get_asset('css/uikit.css') }}" media="screen" title="screen"/>
+    <link rel="stylesheet" href="{{ get_asset('css/main.css') }}" media="screen" title="screen"/>
     <link rel="stylesheet" href="{{ get_asset('css/screen.css') }}" media="screen" title="screen"/>
-    <link href='http://fonts.googleapis.com/css?family=Glegoo|Bitter|Droid+Serif:400,700,400italic,700italic|Raleway:400,200,300,500,600,700' rel='stylesheet' type='text/css'/>
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
     <link rel="shortcut icon" href="{{ get_asset('images/favicon.ico') }}" type="image/ico" />
     <link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="{{ get_url('feed.xml', true) }}" />
     <link href="http://cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css"/>
@@ -27,6 +28,28 @@
 </head>
 
 <body>
+
+
+    <div class="uk-navbar main-navbar">
+        <div class="uk-container-center uk-container">
+            <a href="" class="uk-navbar-brand"><img src="{{ get_asset('images/pyladies-logo-navy.png') }}"></a>
+            <div class="uk-navbar-flip">
+                <ul class="uk-navbar-nav">
+                    <li><a href="{{ get_url('/') }}">Home</a></li>
+                    <li><a href="{{ get_url('about/') }}">About</a></li>
+                    <li><a href="{{ get_url('locations/') }}">Locations</a></li>
+                    <li><a href="{{ get_url('blog/') }}">Blog</a></li>
+                    <li><a href="{{ get_url('CodeOfConduct/') }}">Code of Conduct</a></li>
+                    <li><a href="{{ get_url('resources/') }}">Resources</a></li>
+                    <li><a href="mailto:info@pyladies.com?subject=Hello" id="contact-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
     <div class="ribbon">
       <a href="https://github.com/pyladies/pyladies">Contribute on GitHub</a>
     </div>

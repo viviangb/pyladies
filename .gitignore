@@ -4,6 +4,8 @@
 local_settings.py
 _site/
 .DS_Store
+node_modules/
+.sass-cache/
 
 boston/.floo
 

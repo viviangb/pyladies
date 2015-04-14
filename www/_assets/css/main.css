@@ -1,0 +1,38 @@
+html {
+  font: normal 14px/40px "Lato", sans-serif;
+  font-weight: 300;
+  background: #FAFAFA;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Lato", sans-serif;
+}
+
+.uk-navbar {
+  height: 100px;
+  background-color: #fff;
+}
+
+.uk-navbar-brand {
+  padding: 10px 0px;
+}
+.uk-navbar-brand img {
+  height: 80px;
+}
+
+.uk-navbar-flip {
+  padding: 25px 0px;
+}
+
+.uk-navbar-nav li a {
+  font-size: 18px;
+  color: #29ABE2;
+}
+
+.uk-navbar-nav > li > a {
+  font-family: "Lato", sans-serif;
+}

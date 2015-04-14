@@ -45,8 +45,9 @@ requirements.txt require these to compile successfully.
 create it in the same folder as the code you downloaded. The reason is
 that mynt will search the current directory for files to build and it
 looks for all folders that don't start with an underscore (which means
-it will find your virtualenv folder and error out).
+it will find your virtualenv folder and error out). 
 
+**Note**: Also your virtualenv's python version has to be 2.7 or else it will give you a SimpleHTTPServer import error and mynt won't run. 
 
 ## To write a blog post
 
