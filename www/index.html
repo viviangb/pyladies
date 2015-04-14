@@ -1,6 +1,64 @@
 {% extends 'site.html' %}
 
 {% block content %}
+
+    <div class="slider uk-hidden-small">
+        <div class="uk-grid">
+            <div class="uk-width-small-1-1">
+                <div class="uk-slidenav-position" data-uk-slideshow="{autoplay:true,autoplayInterval:10000, animation: 'fade'}">
+                    <ul class="uk-slideshow uk-overlay-active" >
+                        <li class="slide1">
+                            <img src="{{ get_asset('images/slider/slide1.jpg') }}">
+                            <div class="uk-overlay-panel uk-overlay-background">
+
+                                <div class="uk-vertical-align height100">
+                                    <div class="uk-width-small-1-1 uk-text-center uk-vertical-align-middle">
+                                        <h1>Welcome!</h1>
+                                        <p>We are an international mentorship group with a focus on helping more women become active participants and leaders in the Python open-source community. </p>
+                                    </div>
+                                </div>
+                      
+                            </div>
+                        </li>
+                        <li class="slide2">
+                            <img src="{{ get_asset('images/slider/slide2.jpg') }}">
+                            <div class="uk-overlay-panel uk-overlay-background">
+
+                                <div class="uk-vertical-align height100">
+                                    <div class="uk-width-small-1-1 uk-text-center uk-vertical-align-middle">
+                                        <h1>Welcome!</h1>
+                                        <p>We are an international mentorship group with a focus on helping more women become active participants and leaders in the Python open-source community. </p>
+                                    </div>
+                                </div>
+                      
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous"></a>
+                    <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next"></a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="uk-container-center uk-container">
+        <div class="uk-grid">
+            <div class="uk-width-2-3">
+                <div class="blog-posts">
+                    {% for post in posts[:2] %}
+                        <article class="uk-article">
+                        <h1 class="uk-article-title"><a href="{{ get_url(post.url) }}">{{ post.title }}</a></h1>
+                        <p class="uk-article-meta"><time pubdate datetime="{{ post.timestamp|date('%Y-%m-%d') }}">{{ post.date }}</time></p>
+                        <p class="uk-article-lead">{{ post.excerpt }}  <a href="{{ get_url(post.url) }}" class='more-link'>Read more &rarr;</a></p>
+                        </article>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
     <h1 id="homepage_h1">Welcome!</h1>
     <section id="archive">
         <article class="welcome">

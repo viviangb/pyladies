@@ -1,7 +1,7 @@
 html {
   font: normal 14px/40px "Lato", sans-serif;
   font-weight: 300;
-  background: #FAFAFA;
+  background: #FFFFFF;
 }
 
 body {
@@ -69,8 +69,62 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Lato", sans-serif;
 }
 
+.footer {
+  background-color: #282560;
+  padding: 50px 0px;
+  color: #fff;
+}
+
+.footer-logo {
+  height: 100px;
+}
+
+.footer-social li {
+  list-style-type: none;
+  display: inline;
+  padding-right: 20px;
+}
+.footer-social li i {
+  font-size: 40px;
+  color: #A8E5FF;
+}
+
+.footer-rights {
+  font-size: 16px;
+  color: #A8E5FF;
+}
+
+.footer #mc_embed_signup .button {
+  background-color: #29ABE2;
+  border-radius: 5px;
+  margin-left: 10px;
+  text-shadow: none;
+}
+.footer #mc_embed_signup .button:hover {
+  background-color: #1a8dbe;
+  color: #fff;
+}
+.footer #mc_embed_signup .email {
+  padding: 10px;
+  width: 250px;
+  height: 40px;
+}
+.footer #mc_embed_signup p {
+  font-size: 24px;
+  color: #A8E5FF;
+}
+
 .slider {
   height: 420px;
+}
+.slider h1 {
+  font-size: 50px;
+}
+.slider .uk-overlay-panel {
+  padding: 0px 150px;
+}
+.slider p {
+  font-size: 28px;
 }
 
 .height100 {
@@ -79,4 +133,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .slider .uk-overlay-background {
   background: rgba(0, 0, 0, 0.3);
+}
+
+.blog-posts {
+  padding-right: 50px 0px;
 }
