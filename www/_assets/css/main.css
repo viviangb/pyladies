@@ -12,6 +12,13 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Lato", sans-serif;
 }
 
+.uk-button-primary {
+  background-color: #29ABE2;
+}
+.uk-button-primary:hover {
+  background-color: #1a8dbe;
+}
+
 .ribbon {
   background-color: #FF8700;
   overflow: hidden;
@@ -57,12 +64,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .uk-navbar-nav li a {
   font-size: 18px;
-  color: #29ABE2;
+  color: #444;
 }
 .uk-navbar-nav li:hover a {
   background-color: #fff;
   border-color: transparent;
-  color: #282560;
+  color: #444;
 }
 
 .uk-navbar-nav > li > a {
@@ -136,5 +143,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .blog-posts {
-  padding-right: 50px 0px;
+  padding: 30px 0px;
+}
+.blog-posts .uk-article-title {
+  font-size: 24px;
+  color: #29ABE2;
+}
+.blog-posts .uk-article-meta {
+  font-size: 16px;
+}
+
+.twitter-widget {
+  padding: 30px;
 }

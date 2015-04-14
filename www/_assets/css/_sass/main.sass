@@ -28,6 +28,15 @@ h1, h2, h3, h4, h5, h6
 	font-family: "Lato", sans-serif
 
 ////////////////////////////////
+           Buttons
+////////////////////////////////
+
+.uk-button-primary
+	background-color: $primary-color
+	&:hover
+		background-color: darken($primary-color, 10%)
+
+////////////////////////////////
            Github Ribbon
 ////////////////////////////////
 
@@ -79,12 +88,12 @@ h1, h2, h3, h4, h5, h6
 	li 
 		a 
 			font-size: 18px
-			color: $primary-color
+			color: $dark-text
 		&:hover
 			a 
 				background-color: #fff
 				border-color: transparent
-				color: $third-color
+				color: $dark-text
 
 .uk-navbar-nav > li > a
 	font-family: "Lato", sans-serif
@@ -160,7 +169,22 @@ h1, h2, h3, h4, h5, h6
 
 
 .blog-posts
-	padding-right: 50px 0px
+	padding: 30px 0px
+
+	.uk-article-title
+		font-size: 24px
+		color: $primary-color
+
+	.uk-article-meta
+		font-size: 16px
+
+
+////////////////////////////////
+           Twitter Widget
+////////////////////////////////
+
+.twitter-widget
+	padding: 30px
 
 
 
@@ -168,4 +192,3 @@ h1, h2, h3, h4, h5, h6
 
 
 
-	
